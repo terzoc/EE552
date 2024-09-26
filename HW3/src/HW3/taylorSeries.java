@@ -31,7 +31,13 @@ public class taylorSeries {
         input.close();
         
 //      Calculate Sum
+        double sum = 0;
+        for(int i = 0; i < n; i++) {
+        	sum += Math.pow(x, i)/factorial(i);
+        }
         
+//      Formatted sum output print
+        System.out.println("The approximation of e^" + x + " using "+ n + " terms is: " + sum);
         
 	}
 
@@ -65,11 +71,13 @@ public class taylorSeries {
 		}
 		return true;
 	}
+	
 //	Calculates factorial
-	 static int factorial(int n) { 
+	static int factorial(int n) { 
 		if (n == 0) {
-			 return 1; 
+			return 1; 
 		}
-		 return n * factorial(n - 1); 
-		 } 
+		return n * factorial(n - 1); 
+		} 
+	
 }
