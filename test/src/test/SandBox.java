@@ -1,10 +1,8 @@
 package test;
 
-public class thing {
-	
+public class SandBox{
 	public static void main(String[] args) {
 		
 	}
-		
 
 }
